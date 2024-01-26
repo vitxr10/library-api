@@ -29,9 +29,14 @@ namespace Library.Application.Services.Implementations
         {
             var book = _dbContext.Books.SingleOrDefault(b => b.Id == id);
 
-            var bookDetailsViewModel = new BookDetailsViewModel(book.Id, book.Title, book.Actor, book.ISBN, book.YearOfPublication);
+            BookDetailsViewModel bookDetails = null;
 
-            return bookDetailsViewModel;
+            if (book != null)
+            {
+                bookDetails = new BookDetailsViewModel(book.Id, book.Title, book.Actor, book.ISBN, book.YearOfPublication);
+            }
+
+            return bookDetails;
         }
 
         public int Create(CreateBookInputModel inputModel)

@@ -1,5 +1,4 @@
-﻿using Library.API.Models;
-using Library.Application.InputModels;
+﻿using Library.Application.InputModels;
 using Library.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +10,7 @@ namespace Library.API.Controllers
     public class BooksController : ControllerBase
     {
         private readonly IBooksService _booksService;
-        public BooksController(IBooksService booksService) 
+        public BooksController(IBooksService booksService)
         {
             _booksService = booksService;
         }
@@ -20,6 +19,7 @@ namespace Library.API.Controllers
         public IActionResult GetAll()
         {
             var books = _booksService.GetAll();
+
             return Ok(books);
         }
 
@@ -27,7 +27,12 @@ namespace Library.API.Controllers
         public IActionResult GetById(int id)
         {
             var book = _booksService.GetById(id);
-            //return NotFound();
+
+            if (book == null)
+            {
+                return NotFound("O livro não foi encontrado.");
+            }
+
             return Ok(book);
         }
 
@@ -35,16 +40,28 @@ namespace Library.API.Controllers
         public IActionResult Post([FromBody] CreateBookInputModel inputModel)
         {
             int id = _booksService.Create(inputModel);
-            //return BadRequest();
+
+            if (id == 0)
+            {
+                return BadRequest("Não foi possível adicionar o livro.");
+            }
+
             return CreatedAtAction(nameof(GetById), new { id = inputModel.Id }, inputModel);
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            _booksService.Delete(id);
-            //return BadRequest();
-            return NoContent();
+            try
+            {
+                _booksService.Delete(id);
+
+                return NoContent();
+            }
+            catch
+            {
+                return BadRequest("Não foi possível deletar o livro.");
+            }
         }
 
     }
