@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Core.Entities
+namespace Library.Application.ViewModels
 {
-    public class Book
+    public class BookDetailsViewModel
     {
-        public Book(int id, string title, string actor, string iSBN, int yearOfPublication)
+        public BookDetailsViewModel(int id, string title, string actor, string iSBN, int yearOfPublication)
         {
             Id = id;
             Title = title;

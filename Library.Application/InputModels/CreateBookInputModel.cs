@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Core.Entities
+namespace Library.Application.InputModels
 {
-    public class Book
+    public class CreateBookInputModel
     {
-        public Book(int id, string title, string actor, string iSBN, int yearOfPublication)
+        public CreateBookInputModel(int id, string title, string actor, string iSBN, int yearOfPublication)
         {
             Id = id;
             Title = title;
