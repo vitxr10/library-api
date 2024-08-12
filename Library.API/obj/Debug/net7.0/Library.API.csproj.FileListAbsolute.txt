@@ -165,3 +165,6 @@ C:\Users\vitor.alves\Desktop\library-api\Library.API\obj\Debug\net7.0\refint\Lib
 C:\Users\vitor.alves\Desktop\library-api\Library.API\obj\Debug\net7.0\Library.API.pdb
 C:\Users\vitor.alves\Desktop\library-api\Library.API\obj\Debug\net7.0\Library.API.genruntimeconfig.cache
 C:\Users\vitor.alves\Desktop\library-api\Library.API\obj\Debug\net7.0\ref\Library.API.dll
+C:\Users\vitor.alves\Desktop\library-api\Library.API\bin\Debug\net7.0\MediatR.dll
+C:\Users\vitor.alves\Desktop\library-api\Library.API\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\vitor.alves\Desktop\library-api\Library.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

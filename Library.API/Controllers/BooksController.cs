@@ -1,5 +1,7 @@
-﻿using Library.Application.InputModels;
-using Library.Application.Services.Interfaces;
+﻿using Library.Application.Commands.BooksCommands;
+using Library.Application.InputModels;
+using Library.Application.Queries.BooksQueries;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,58 +11,78 @@ namespace Library.API.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly IBooksService _booksService;
-        public BooksController(IBooksService booksService)
+        private readonly IMediator _mediator;
+        public BooksController(IMediator mediator)
         {
-            _booksService = booksService;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var books = _booksService.GetAll();
+            var query = new GetAllBooksQuery();
+
+            var books = await _mediator.Send(query);
 
             return Ok(books);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
-        {
-            var book = _booksService.GetById(id);
-
-            if (book == null)
-            {
-                return NotFound("O livro não foi encontrado.");
-            }
-
-            return Ok(book);
-        }
-
-        [HttpPost]
-        public IActionResult Post([FromBody] CreateBookInputModel inputModel)
-        {
-            int id = _booksService.Create(inputModel);
-
-            if (id == 0)
-            {
-                return BadRequest("Não foi possível adicionar o livro.");
-            }
-
-            return CreatedAtAction(nameof(GetById), new { id = inputModel.Id }, inputModel);
-        }
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                _booksService.Delete(id);
+                var query = new GetBookByIdQuery(id);
+
+                var books = await _mediator.Send(query);
+
+                return Ok(books);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(CreateBookCommand command)
+        {
+            var id = await _mediator.Send(command);
+
+            return CreatedAtAction(nameof(GetById), new { id }, command);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, UpdateBookCommand command)
+        {
+            try
+            {
+                command.Id = id;
+
+                await _mediator.Send(command);
 
                 return NoContent();
             }
-            catch
+            catch (Exception ex)
             {
-                return BadRequest("Não foi possível deletar o livro.");
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var command = new DeleteBookCommand(id);
+
+                await _mediator.Send(command);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
             }
         }
 

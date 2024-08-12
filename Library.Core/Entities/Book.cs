@@ -15,6 +15,7 @@ namespace Library.Core.Entities
             Actor = actor;
             ISBN = iSBN;
             YearOfPublication = yearOfPublication;
+            Status = BookStatusEnum.Available;
         }
 
         public int Id { get; private set; }

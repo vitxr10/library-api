@@ -1,5 +1,4 @@
-using Library.Application.Services.Implementations;
-using Library.Application.Services.Interfaces;
+using Library.Application.Commands.BooksCommands;
 using Library.Core.Repositories;
 using Library.Infrastructure.Persistence;
 using Library.Infrastructure.Persistence.Repositories;
@@ -16,7 +15,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("LibraryDb"));
 
-builder.Services.AddScoped<IBooksService, BooksService>();
+// mediatR
+builder.Services.AddMediatR(options => options.RegisterServicesFromAssemblyContaining(typeof(CreateBookCommand)));
+
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
