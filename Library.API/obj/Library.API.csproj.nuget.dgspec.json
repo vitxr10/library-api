@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.API\\Library.API.csproj": {}
+    "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\Library.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.API\\Library.API.csproj": {
+    "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\Library.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.API\\Library.API.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\Library.API.csproj",
         "projectName": "Library.API",
-        "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.API\\Library.API.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.API\\obj\\",
+        "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\Library.API.csproj",
+        "packagesPath": "C:\\Users\\vitor.alves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +31,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\Library.Application.csproj": {
-                "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\Library.Application.csproj"
+              "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj": {
+                "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj"
               },
-              "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj"
+              "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj"
               }
             }
           }
@@ -41,6 +44,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -81,21 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\Library.Application.csproj": {
+    "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\Library.Application.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj",
         "projectName": "Library.Application",
-        "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\Library.Application.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Application\\obj\\",
+        "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj",
+        "packagesPath": "C:\\Users\\vitor.alves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,8 +120,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj"
+              "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj"
               }
             }
           }
@@ -119,6 +130,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -140,21 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\Library.Core.csproj": {
+    "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\Library.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\Library.Core.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\Library.Core.csproj",
         "projectName": "Library.Core",
-        "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\Library.Core.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\obj\\",
+        "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\Library.Core.csproj",
+        "packagesPath": "C:\\Users\\vitor.alves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,6 +193,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -195,21 +219,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj": {
+    "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj",
         "projectName": "Library.Infrastructure",
-        "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\Library.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\Library.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\vitor.alves\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor.alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -223,8 +250,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\Library.Core.csproj": {
-                "projectPath": "C:\\Users\\vitor\\OneDrive\\Área de Trabalho\\Library\\Library.Core\\Library.Core.csproj"
+              "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\Library.Core.csproj": {
+                "projectPath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Core\\Library.Core.csproj"
               }
             }
           }
@@ -233,6 +260,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -274,7 +306,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
