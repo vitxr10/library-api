@@ -1,6 +1,8 @@
 using Library.Application.Services.Implementations;
 using Library.Application.Services.Interfaces;
+using Library.Core.Repositories;
 using Library.Infrastructure.Persistence;
+using Library.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("LibraryDb"));
 
 builder.Services.AddScoped<IBooksService, BooksService>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 

@@ -8,9 +8,8 @@ namespace Library.Core.Entities
 {
     public class Book
     {
-        public Book(int id, string title, string actor, string iSBN, int yearOfPublication)
+        public Book(string title, string actor, string iSBN, int yearOfPublication)
         {
-            Id = id;
             Title = title;
             Actor = actor;
             ISBN = iSBN;
