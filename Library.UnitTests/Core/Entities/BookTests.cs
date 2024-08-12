@@ -38,6 +38,7 @@ namespace Library.UnitTests.Core.Entities
             Assert.Equal(actor, book.Actor);
             Assert.Equal(isbn, book.ISBN);
             Assert.Equal(year, book.YearOfPublication);
+            Assert.True(book.UpdatedAt > DateTime.MinValue);
             await bookRepositoryMock.Received(1).GetByIdAsync(Arg.Any<int>());
             await bookRepositoryMock.Received(1).SaveAsync();
         }
@@ -59,6 +60,7 @@ namespace Library.UnitTests.Core.Entities
 
             // Assert
             Assert.Equal(BookStatusEnum.Unavailable, book.Status);
+            Assert.True(book.UpdatedAt > DateTime.MinValue);
             await bookRepositoryMock.Received(1).GetByIdAsync(Arg.Any<int>());
             await bookRepositoryMock.Received(1).SaveAsync();
         }

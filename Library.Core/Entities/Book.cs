@@ -16,6 +16,7 @@ namespace Library.Core.Entities
             ISBN = iSBN;
             YearOfPublication = yearOfPublication;
             Status = BookStatusEnum.Available;
+            CreatedAt = DateTime.Now;
         }
 
         public int Id { get; private set; }
@@ -24,10 +25,13 @@ namespace Library.Core.Entities
         public string ISBN { get; private set; }
         public int YearOfPublication { get; private set; }
         public BookStatusEnum Status { get; private set; }
+        public DateTime CreatedAt { get; private set; }
+        public DateTime UpdatedAt { get; private set; }
 
         public void Delete()
         {
             Status = BookStatusEnum.Unavailable;
+            UpdatedAt = DateTime.Now;
         }
 
         public void Update(string title, string actor, string iSBN, int yearOfPublication)
@@ -36,6 +40,7 @@ namespace Library.Core.Entities
             Actor = actor;
             ISBN = iSBN;
             YearOfPublication = yearOfPublication;
+            UpdatedAt = DateTime.Now;
         }
     }
 }
