@@ -1,5 +1,4 @@
 ﻿using Library.Application.Commands.BooksCommands;
-using Library.Application.InputModels;
 using Library.Application.Queries.BooksQueries;
 using MediatR;
 using Microsoft.AspNetCore.Http;

@@ -9,6 +9,10 @@ namespace Library.Application.Commands.BooksCommands
 {
     public class DeleteBookCommand : IRequest
     {
+        public DeleteBookCommand()
+        {
+        }
+
         public DeleteBookCommand(int id)
         {
             Id = id;

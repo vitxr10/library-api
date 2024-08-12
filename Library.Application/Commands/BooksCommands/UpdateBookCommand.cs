@@ -9,6 +9,18 @@ namespace Library.Application.Commands.BooksCommands
 {
     public class UpdateBookCommand : IRequest
     {
+        public UpdateBookCommand()
+        {
+            
+        }
+        public UpdateBookCommand(string title, string actor, string iSBN, int yearOfPublication)
+        {
+            Title = title;
+            Actor = actor;
+            ISBN = iSBN;
+            YearOfPublication = yearOfPublication;
+        }
+
         public int Id { get; set; }
         public string Title { get; set; }
         public string Actor { get; set; }

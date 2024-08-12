@@ -10,6 +10,10 @@ namespace Library.Application.Queries.BooksQueries
 {
     public class GetBookByIdQuery : IRequest<BookDetailsViewModel>
     {
+        public GetBookByIdQuery()
+        {
+        }
+
         public GetBookByIdQuery(int id)
         {
             Id = id;
