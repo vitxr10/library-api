@@ -41,7 +41,7 @@ namespace Library.Application.Services.Implementations
 
         public int Create(CreateBookInputModel inputModel)
         {
-            var book = new Book(inputModel.Id, inputModel.Title, inputModel.Actor, inputModel.ISBN, inputModel.YearOfPublication);
+            var book = new Book(inputModel.Title, inputModel.Actor, inputModel.ISBN, inputModel.YearOfPublication);
 
             _dbContext.Books.Add(book);
             _dbContext.SaveChanges();
