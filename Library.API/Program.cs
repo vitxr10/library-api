@@ -1,4 +1,6 @@
+using FluentValidation.AspNetCore;
 using Library.Application.Commands.BooksCommands;
+using Library.Application.Validators;
 using Library.Core.Repositories;
 using Library.Infrastructure.Persistence;
 using Library.Infrastructure.Persistence.Repositories;
@@ -14,6 +16,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("LibraryDb"));
+
+// fluentValidation
+builder.Services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateBookCommandValidator>());
 
 // mediatR
 builder.Services.AddMediatR(options => options.RegisterServicesFromAssemblyContaining(typeof(CreateBookCommand)));

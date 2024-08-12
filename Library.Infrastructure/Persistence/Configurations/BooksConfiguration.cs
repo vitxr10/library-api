@@ -15,9 +15,6 @@ namespace Library.Infrastructure.Persistence.Configurations
         {
             builder
                 .HasKey(b  => b.Id);
-
-            builder
-                .ToTable("Books");
         }
     }
 }

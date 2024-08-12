@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "vQqq8PZDlNwcU4qe3f300zqkZd3ZQnswxge3bUuZ6CPdaDzYLE/X61YXSZEvTN+WFrHPQPUZTIfW24Q/cuHPxw==",
+  "dgSpecHash": "cXlcTE+XZTOMxL5s13vpZ/J2MJDKCIU9HeSgrjvjfCM0wGoCKd5vQ9gklPl6xi53P82e7LmGuKIfn1ZBhNtbtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.API\\Library.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.alves\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\vitor.alves\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\vitor.alves\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\vitor.alves\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

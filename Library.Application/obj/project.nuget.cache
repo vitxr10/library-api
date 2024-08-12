@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6eM2SHZiF3a8Iia/B15uZjNoZ0nOhmZ6xqJCx5inJEIbvss6HSyvNzU02o43kXXAJvyqVbD41rxFhjA3EiCVug==",
+  "dgSpecHash": "2JSRCjHE9523METssspy8/vBNWwYg0a8y+OPB4lSPxT6oBOBKCvp2UVGKg0Yte38diSlOlU3d9yfsfAP5A23lw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor.alves\\Desktop\\library-api\\Library.Application\\Library.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vitor.alves\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\vitor.alves\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\mediatr\\12.4.0\\mediatr.12.4.0.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\vitor.alves\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
